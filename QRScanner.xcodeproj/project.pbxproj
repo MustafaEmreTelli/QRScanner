@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		EA407D582AF2736C00299982 /* QRScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA407D572AF2736C00299982 /* QRScannerApp.swift */; };
-		EA407D5A2AF2736C00299982 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA407D592AF2736C00299982 /* ContentView.swift */; };
+		EA407D5A2AF2736C00299982 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA407D592AF2736C00299982 /* QRScannerView.swift */; };
 		EA407D5C2AF2736F00299982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA407D5B2AF2736F00299982 /* Assets.xcassets */; };
 		EA407D5F2AF2736F00299982 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA407D5E2AF2736F00299982 /* Preview Assets.xcassets */; };
 		EA407D692AF2737000299982 /* QRScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA407D682AF2737000299982 /* QRScannerTests.swift */; };
 		EA407D732AF2737000299982 /* QRScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA407D722AF2737000299982 /* QRScannerUITests.swift */; };
 		EA407D752AF2737000299982 /* QRScannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA407D742AF2737000299982 /* QRScannerUITestsLaunchTests.swift */; };
+		EA407D832AF273C900299982 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA407D822AF273C900299982 /* ScannerViewController.swift */; };
+		EA407D852AF273E000299982 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA407D842AF273E000299982 /* ScannerView.swift */; };
+		EA407D872AF273F600299982 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA407D862AF273F600299982 /* SafariView.swift */; };
+		EA407D8C2AF2747200299982 /* QRScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA407D8B2AF2747200299982 /* QRScannerViewModel.swift */; };
+		EA407D8F2AF2749500299982 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA407D8E2AF2749500299982 /* Alerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		EA407D542AF2736C00299982 /* QRScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA407D572AF2736C00299982 /* QRScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerApp.swift; sourceTree = "<group>"; };
-		EA407D592AF2736C00299982 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA407D592AF2736C00299982 /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
 		EA407D5B2AF2736F00299982 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA407D5E2AF2736F00299982 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EA407D642AF2737000299982 /* QRScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +49,11 @@
 		EA407D6E2AF2737000299982 /* QRScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA407D722AF2737000299982 /* QRScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerUITests.swift; sourceTree = "<group>"; };
 		EA407D742AF2737000299982 /* QRScannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA407D822AF273C900299982 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		EA407D842AF273E000299982 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		EA407D862AF273F600299982 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		EA407D8B2AF2747200299982 /* QRScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewModel.swift; sourceTree = "<group>"; };
+		EA407D8E2AF2749500299982 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +104,10 @@
 		EA407D562AF2736C00299982 /* QRScanner */ = {
 			isa = PBXGroup;
 			children = (
+				EA407D8D2AF2748B00299982 /* Utilities */,
+				EA407D892AF2741000299982 /* Screens */,
+				EA407D882AF2740400299982 /* Views */,
 				EA407D572AF2736C00299982 /* QRScannerApp.swift */,
-				EA407D592AF2736C00299982 /* ContentView.swift */,
 				EA407D5B2AF2736F00299982 /* Assets.xcassets */,
 				EA407D5D2AF2736F00299982 /* Preview Content */,
 			);
@@ -125,6 +137,41 @@
 				EA407D742AF2737000299982 /* QRScannerUITestsLaunchTests.swift */,
 			);
 			path = QRScannerUITests;
+			sourceTree = "<group>";
+		};
+		EA407D812AF273B200299982 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				EA407D822AF273C900299982 /* ScannerViewController.swift */,
+				EA407D842AF273E000299982 /* ScannerView.swift */,
+				EA407D862AF273F600299982 /* SafariView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		EA407D882AF2740400299982 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA407D812AF273B200299982 /* UIKit Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA407D892AF2741000299982 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				EA407D592AF2736C00299982 /* QRScannerView.swift */,
+				EA407D8B2AF2747200299982 /* QRScannerViewModel.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		EA407D8D2AF2748B00299982 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EA407D8E2AF2749500299982 /* Alerts.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA407D5A2AF2736C00299982 /* ContentView.swift in Sources */,
+				EA407D5A2AF2736C00299982 /* QRScannerView.swift in Sources */,
+				EA407D852AF273E000299982 /* ScannerView.swift in Sources */,
+				EA407D8C2AF2747200299982 /* QRScannerViewModel.swift in Sources */,
+				EA407D832AF273C900299982 /* ScannerViewController.swift in Sources */,
 				EA407D582AF2736C00299982 /* QRScannerApp.swift in Sources */,
+				EA407D8F2AF2749500299982 /* Alerts.swift in Sources */,
+				EA407D872AF273F600299982 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +477,7 @@
 				DEVELOPMENT_TEAM = B94PVVXNK9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission is needed in order to scan QR codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +507,7 @@
 				DEVELOPMENT_TEAM = B94PVVXNK9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission is needed in order to scan QR codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
