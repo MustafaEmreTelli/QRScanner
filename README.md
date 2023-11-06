@@ -15,3 +15,17 @@ This project is a mobile application developed with Swift, SwiftUI, and AVFounda
 1. **QR Code Scanning:** The app allows users to scan QR codes quickly and efficiently.
 2. **Safari View Integration:** Upon scanning a QR code, the app opens a Safari View to display the contents of the QR code.
 3. **Clickable QR Links:** The scanned QR link is presented on the app's user interface in a clickable format. This allows users to open a Safari View within the app to view the linked content.
+
+### Images
+
+&ensp;
+&ensp;
+<img src="https://github.com/MustafaEmreTelli/QRScanner/assets/77791748/2050f9c3-4f2a-4654-8839-2121f476bf16" width="285" height="570">
+&ensp;
+&ensp;
+<img src="https://github.com/MustafaEmreTelli/QRScanner/assets/77791748/58628131-e9c8-42d5-a7fd-2a805303131c" width="285" height="570">
+&ensp;
+&ensp;
+<img src="https://github.com/MustafaEmreTelli/QRScanner/assets/77791748/7b501161-d2a7-46d6-bd76-47059b106094" width="285" height="570">
+
+
